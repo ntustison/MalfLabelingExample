@@ -4,9 +4,11 @@ inputPath=${PWD}/
 # ${ANTsPath}/antsMalfLabeling.sh \
 ${ANTsPath}/antsJointLabelFusion.sh \
   -d 2 \
+  -c 2 -j 4 \
   -o ${inputPath}/Output/example \
   -p ${inputPath}/Output/examplePosteriors%02d.nii.gz \
   -t ${inputPath}/T_template0.nii.gz \
+  -x ${inputPath}/T_template0_mask.nii.gz \
   -g ${inputPath}/Atlases/OASIS-TRT-20-10_slice118.nii.gz -l ${inputPath}/Labels/OASIS-TRT-20-10_DKT31_CMA_labels_slice118.nii.gz \
   -g ${inputPath}/Atlases/OASIS-TRT-20-11_slice118.nii.gz -l ${inputPath}/Labels/OASIS-TRT-20-11_DKT31_CMA_labels_slice118.nii.gz \
   -g ${inputPath}/Atlases/OASIS-TRT-20-12_slice118.nii.gz -l ${inputPath}/Labels/OASIS-TRT-20-12_DKT31_CMA_labels_slice118.nii.gz \
