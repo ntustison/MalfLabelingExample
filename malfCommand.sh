@@ -1,8 +1,6 @@
-ANTsPath=/Users/ntustison/Pkg/ANTs/bin/bin/
 inputPath=${PWD}/
 
-# ${ANTsPath}/antsMalfLabeling.sh \
-${ANTsPath}/antsJointLabelFusion.sh \
+${ANTSPATH}/antsJointLabelFusion.sh \
   -d 2 \
   -c 2 -j 4 \
   -x or \
